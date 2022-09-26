@@ -1,5 +1,5 @@
 {
-  "name": "quote bot",
+  "name": "quote-bot",
   "main": "bot.js",
   "scripts": {
     "start": "node bot.js"

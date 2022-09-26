@@ -45,7 +45,7 @@ const rules = [{
 const endpointURL = "https://api.twitter.com/2/tweets?ids=";
 
 const request = require('request')
-const url = 'url'
+const url = 'https://blade-quote.onrender.com'
 
 // use a timeout value of 10 seconds
 const timeoutInMilliseconds = 10 * 1000
