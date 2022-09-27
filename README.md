@@ -10,6 +10,6 @@ You can find Twitter's provided sample code for filtered streams, which this pro
 [here](https://github.com/twitterdev/Twitter-API-v2-sample-code/blob/main/Filtered-Stream/filtered_stream.js).
 
 ## Deployment
-The bot is deployed on the [Render](https://render.com) platform. The Twitter account used is [@bladerunnersbot](https://twitter.com/bladerunnersbot).
+The bot is deployed on the [Render](https://render.com) platform. The Twitter account used is [@bladerunnersbot](https://twitter.com/bladerunnersbot)
 
 
