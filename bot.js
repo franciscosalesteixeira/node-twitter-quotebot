@@ -44,32 +44,23 @@ const rules = [{
 
 const endpointURL = "https://api.twitter.com/2/tweets?ids=";
 
-const request = require('request')
+const axios = require('axios')
+
 const url = 'https://blade-quote.onrender.com'
-
-// use a timeout value of 10 seconds
 const timeoutInMilliseconds = 10 * 1000
-const opts = {
-  url: url,
-  timeout: timeoutInMilliseconds
-}
 
-setInterval(function () {
-  
-  request(opts, function (err, res, body) {
+setInterval(async function () {
 
-    if (err) {
-      console.dir(err)
-      return
+    try {
+        const response = await axios.get(url, { timeout: timeoutInMilliseconds })
+        console.log('status code:', response.status)
+        
+    } catch (error) {
+        console.error(error)
     }
 
-    let statusCode = res.statusCode
-    console.log('status code: ' + statusCode)
-  });
+}, 1000 * 60 * 14)
 
-// render apps spin down after 15 minutes
-// access render's deployed website every 14 min for the bot to always be available
-}, 1000 * 60 * 14);
 
 async function getRequest(id) {
 
